@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<!-- 스크롤만 적용이 안됨 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="css/stylewow.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <title>JUHEE SHIN</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <nav>
+            <a href="#"><img src="images/logo.png"></a>
+            <ul>
+                <li class="active"><a href="#"><img src="images/HOME.png"></a></li>
+                <li><a href="#"><img src="images/ABOUT ME.png"></a></li>
+                <li><a href="#"><img src="images/SKILLS.png"></a></li>
+                <li><a href="#"><img src="images/PORTFOLIO.png"></a></li>
+                <li><a href="#"><img src="images/CONTACT.png"></a></li>
+            </ul>
+        </nav>
+
+        <section class="cont">
+            <div class="page1">
+                <p id="simpleUsage"></p>
+            </div>
+
+            <div class="page2">
+                <div class="info">
+                    <div class="left">
+                        <div>
+                            <img class="slide1" src="./images/design shin1.png">
+                            <img class="slide1" src="./images/design shin2.png">
+                            <img class="slide1" src="./images/design shin3.png">
+                        </div>
+
+                        <h1 class="name">신주희</h1>
+                        <!-- <p>1997.08.10<br>
+                            juhee8119@naver.com</p> -->
+                    </div>
+                    <div class="right">
+                        <div class="edu">
+                            <h2 class="titlename">&nbsp EDUCATION</h2>
+                            <h4>•2021.12-2022.06 (960시간) </h4>
+                            <p> &nbsp &nbsp 지능형 웹서비스 풀스택 개발 (멀티캠퍼스)</p>
+                            <h4>•2021.03-2021.07 (880시간)</h4>
+                            <p> &nbsp &nbsp UIUX 웹디자인&웹퍼블리셔 스마트혼합 과정 수료 (양정인력개발센터)</p>
+
+                        </div>
+                        <div class="certifi">
+                            <h2 class="titlename">
+                                &nbsp UNIVERSITY
+                            </h2>
+                            <h4>•2016.03-2018.02</h4>
+                            <p> &nbsp &nbsp 동원과학기술대학교 사회복지과 졸업</p>
+                            <h4>•2013.03-2016.02</h4>
+                            <p> &nbsp &nbsp 경혜여자고등학교 졸업</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page3">
+                <div class="graph">
+                    <H2><img src="./images/SKILLSTITLE.png"></H2>
+                    <div class="pie-chart pie-chart1">
+                        <span class="center">90%</span>
+                        <h1>HTML5 + CSS3</h1>
+                    </div>
+
+
+                    <div class="pie-chart pie-chart2">
+                        <span class="center">60%</span>
+                        <h1>JavaScript</h1>
+                    </div>
+
+                    <div class="pie-chart pie-chart3">
+                        <span class="center">30%</span>
+                        <h1>jquery</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page4">
+                <h1 class="portfoliotitle"><img src="images/PORTFOLIO1.png"></h1>
+                <div class="portpic">
+                    <a href="https://juheeshin1.github.io/portfolio/"><img src="images/smilejuhee.png"></a>
+                    <a href="https://juheeshin1.github.io/buly/"><img src="images/buly.png"></a>
+                    <a href="https://juheeshin1.github.io/yc/"><img src="images/yc.png"></a>
+                </div>
+                <div class="portpic2">
+                    <a href="https://github.com/hchanhi/Am2zing_MOMO_Project.git"><img src="images/MOMO_LOGO.png"></a>
+                    <a href="https://juheeshin1.github.io/dryflower/"><img src="images/dryflower2.png"></a>
+                </div>
+            </div>
+
+            <div class="page5">
+                <div class="contact_left">
+                    <SPAN><img class="contact2" src="images/CONTACT2.png"></SPAN>
+                    <p>제 포트폴리오를 봐주셔서 감사합니다. 제 작업이 마음에 드셨거나,<br>
+                        문의사항이 있으시다면 언제든지 편하게 연락주시기 바랍니다.<br>
+                        우측의 양식이나 하단의 연락처로 문의를 보내주시면 확인 후 바로<br>
+                        연락드리겠습니다.</p>
+                    <br>
+                    <br>
+                    <div class="leftunder">
+                        <!-- <h2>Address</h2>
+                        <h3>경상남도 양산시</h3> -->
+                        <h2>Phone number</h2>
+                        <h3>010-2952-0810</h3>
+                        <h2>Email</h2>
+                        <h3>juheenew@gmail.com</h3>
+                    </div>
+                </div>
+                <div class="contact_right">
+                    <form id="contact-form">
+                        <input type="hidden" name="contact_number">
+                        <input class="email" type="email" name="email" placeholder="EMAIL" required autocomplete="off">
+                        <input class="title" type="text" name="title" placeholder="TITLE" required autocomplete="off">
+                        <textarea class="message" name="message" placeholder="MESSAGE" required
+                            autocomplete="off"></textarea>
+                        <input class="button" type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+                //아래에다가 API ID를 입력합니다
+                emailjs.init("user_UoP1hH0m9FOAzBcj9c55Z");
+            })();
+        </script>
+        <script type="text/javascript">
+            window.onload = function () {
+                document.getElementById('contact-form').addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    this.contact_number.value = Math.random() * 100000 | 0;
+                    emailjs.sendForm('service_zwc81bd', 'template_m8w4qbi', this)
+                        .then(function () {
+                            console.log('SUCCESS!');
+                            alert('메일 전송이 완료되었습니다. 감사합니다.')
+                        }, function (error) {
+                            console.log('FAILED...', error);
+                        });
+                });
+            }
+        </script>
+
+        <script>
+            var navi = $('nav ul li')
+            var cont = $('.cont > div')
+
+            navi.click(function () {
+                var target = $(this)
+                var index = target.index();
+                // alert(index)
+                var page = cont.eq(index)
+                var pageTop = page.offset().top
+                // alert(pageTop)
+
+                $('html,body').animate({
+                    scrollTop: pageTop
+                }, 500)
+
+            })
+
+            $(window).scroll(function () {
+
+                var Cscroll = $(this).scrollTop()
+
+                if (Cscroll >= cont.eq(0).offset().top) {
+
+                    navi.removeClass('active')
+                    navi.eq(0).addClass('active')
+                    cont.eq(0).children('h2').addClass('show')
+                }
+                if (Cscroll >= cont.eq(1).offset().top) {
+                    navi.removeClass('active')
+                    navi.eq(1).addClass('active')
+                    cont.eq(1).children('h2').addClass('show')
+                }
+                if (Cscroll >= cont.eq(2).offset().top) {
+                    navi.removeClass('active')
+                    navi.eq(2).addClass('active')
+                    cont.eq(2).children('h2').addClass('show')
+                }
+                if (Cscroll >= cont.eq(3).offset().top) {
+                    navi.removeClass('active')
+                    navi.eq(3).addClass('active')
+                    cont.eq(3).children('h2').addClass('show')
+                }
+                if (Cscroll >= cont.eq(4).offset().top) {
+                    navi.removeClass('active')
+                    navi.eq(4).addClass('active')
+                    cont.eq(4).children('h2').addClass('show')
+                }
+
+            })
+
+            //
+            $(document).ready(function () {
+
+                'use strict';
+
+                var slide = $('.slide'),
+                    slideAelements = $('.slide-a-child'),
+                    slideBelements = $('.slide-b-child'),
+                    slideCelements = $('.slide-c-child'),
+                    slideDelements = $('.slide-d-child'),
+                    replay = $('button.replay');
+
+
+
+                slide.each(function (i) {
+                    if (i < 3) {
+                        setTimeout(function () {
+                            slide.eq(i).fadeOut();
+                        }, 5000 * (i + 1));
+                    }
+                });
+
+
+                function animateSlideA() {
+                    slideAelements.each(function (i) {
+                        setTimeout(function () {
+                            slideAelements.eq(i).addClass('is-visible');
+                        }, 300 * (i + 1));
+                    });
+                }
+
+                //
+                animateSlideA();
+
+                setTimeout(function () {
+                    animateSlideB();
+                }, 5000);
+
+                setTimeout(function () {
+                    animateSlideC();
+                }, 10000);
+
+                setTimeout(function () {
+                    animateSlideD();
+                }, 15000);
+
+
+                replay.on('click', function () {
+                    location.reload(true);
+                });
+
+            });
+
+            //
+
+            new TypeIt("#simpleUsage", {
+                    strings: "HI! I'M JUHEE",
+                    speed: 140,
+                    waitUntilVisible: true
+                })
+                .break({
+                    delay: 250
+                })
+                .type("AND I'M A FRONTEND", {
+                    delay: 140
+                })
+                .break({
+                    delay: 250
+                })
+                .type("DEVELOPER", {
+                    delay: 140
+                })
+                .go();
+        </SCRIPT>
+
+        <script>
+            $(window).ready(function () {
+                draw(90, '.pie-chart1', '#3d5537');
+                draw(60, '.pie-chart2', '#3d5537');
+                draw(30, '.pie-chart3', '#3d5537');
+            });
+            // 원형부분의 채워지는 퍼센트와 백그라운드컬러 변경
+
+            function draw(max, classname, colorname) {
+                var i = 1;
+                var func1 = setInterval(function () {
+                    if (i < max) {
+                        color(i, classname, colorname);
+                        i++;
+                    } else {
+                        clearInterval(func1);
+                    }
+                }, 20);
+            }
+            //1씩 증가 위에서 정해놓은 수치값이 채워질시 셋인터벌 멈춤.
+
+            function color(i, classname, colorname) {
+                $(classname).css({
+                    "background": "conic-gradient(" + colorname + " 0% " + i + "%, #ffffff " + i + "% 100%)"
+                });
+            }
+            // 비워져있는 부분 컬러 및 퍼센트
+
+
+            // -----about me 이미지 자동 슬라이드-------
+            var index = 0; //이미지에 접근하는 인덱스
+            window.onload = function () {
+                slideShow();
+            }
+
+            function slideShow() {
+                var i;
+                var x = document.getElementsByClassName("slide1"); //slide1에 대한 dom 참조
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none"; //처음에 전부 display를 none으로 한다.
+                }
+                index++;
+                if (index > x.length) {
+                    index = 1; //인덱스가 초과되면 1로 변경
+                }
+                x[index - 1].style.display = "block"; //해당 인덱스는 block으로
+                setTimeout(slideShow, 2500); //함수를 4초마다 호출
+
+            }
+
+            ///////////////////////////////////////////
+        </script>
+    </div>
+</body>
+
+</html>

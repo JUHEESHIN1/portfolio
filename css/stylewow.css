@@ -1,0 +1,420 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+/* font-family: 'Merriweather', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Playfair+Display:wght@500&display=swap');
+/* font-family: 'Playfair Display', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Nanum+Gothic:wght@400;700;800&display=swap');
+/* font-family: 'Nanum Gothic', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600&display=swap');
+/* font-family: 'Noto Serif KR', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap');
+/* font-family: 'Ramabhadra', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+/* font-family: 'Nanum Myeongjo', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap');
+/* font-family: 'Nanum Myeongjo', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+/* font-family: 'Prata', serif; */
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.inner {
+    width: 1200px;
+}
+
+.stop {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 1200px;
+    height: 960px;
+}
+
+/* ----reset--------------------------------------------------- */
+.clearfix::before .clearfix::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+/* ------nav---------------------------------------------------- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+nav>a img {
+    padding: 35px 70px;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    margin-top: 15px;
+    margin-right: 30px;
+}
+
+
+nav ul li a {
+    padding: 20px 30px;
+    display: block;
+}
+
+nav ul li.active {
+    color: white;
+}
+
+
+
+/* -------cont------------------------------------------------------- */
+
+.cont > div {
+    height: 100vh;
+    line-height: 50px;
+}
+
+.page1 {
+    background-image: url(../images/header_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page1 p {
+    color: white;
+    font-size: 45pt;
+    padding-top: 250px;
+    padding-left: 750px;
+    line-height: 120px;
+}
+
+/* --------------page1---------------------------------------------- */
+.page1 #simpleUsage {
+    font-family: 'Prata', serif;
+    COLOR: #c8f028;
+}
+
+/* -------page2-------------------------------------------------- */
+
+.page2 {
+    /* background-color: rgb(127, 157, 202); */
+    background-color: rgb(35, 48, 88);
+    color: white;
+}
+
+.info{
+    width: 1440px;
+}
+
+.page2 .info .left {
+    float: left;
+    width: 800px;
+    height:100%;
+    /* text-align: center;
+    background-color: #c8f028; */
+}
+
+.slide1{
+    padding-top: 150px;
+    padding-left:200px;
+}
+
+.page2 .info .left .name {
+    font-size: 28pt;
+    margin-top: 30px;
+    text-align: center;
+    color:#46a5fd;
+}
+
+
+.page2 .info .right {
+    float: left;
+    padding-top: 150px;
+    padding-left:100px;
+}
+
+.page2 .info .right .edu{
+    padding-bottom: 20px;
+}
+
+.page2 .info .right .titlename {
+    font-weight: 800;
+    font-size: 15pt;
+}
+
+.page2 .info .right .edu .titlename p {
+    line-height: 10px;
+}
+
+.page2 .info .right h2 {
+    font-size: 18pt;
+    color:#46a5fd;;
+}
+
+
+
+/* ---------page3------------------------------------------------- */
+
+.page3 {
+    padding-left: 200px;
+    height: 600px;
+    background-color: rgb(187, 215, 134);
+    /* background-color: rgb(186, 202, 127); */
+
+}
+
+.graph{
+    padding-top: 150px;
+}
+
+.page3 h1 {
+    margin-top: 350px;
+    font-size: 20pt;
+    color: rgb(44, 92, 29);
+    font-weight: 800;
+}
+
+.page3 h2 {
+    margin-bottom: 80px;
+    padding-left: 500px;
+}
+
+
+.pie-chart {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    transition: 0.3s;
+    margin: 0 30px;
+    margin-right: 60px;
+    color: rgb(9, 19, 9);
+}
+
+span.center {
+    background-color:rgb(187, 215, 134);
+    color: rgb(61, 85, 55);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+    font-weight: 800;
+    transform: translate(-50%, -50%);
+}
+
+.pie-chart1 {
+    border: 2px solid #3d5537;
+    text-align: center;
+}
+
+.pie-chart2 {
+    border: 2px solid #3d5537;
+    text-align: center;
+}
+
+.pie-chart3 {
+    border: 2px solid #3d5537;
+    text-align: center;
+}
+
+.pie-chart1 .center {
+    border: 2px solid #3d5537
+}
+
+.pie-chart2 .center {
+    border: 2px solid #3d5537
+}
+
+.pie-chart3 .center {
+    border: 2px solid #3d5537
+}
+
+
+/* ---------page4---------------------------------------------- */
+
+.page4 h2 {
+    transform: rotate(45deg);
+}
+
+h2.show {
+    opacity: 1;
+    transform: translate(0, 0) scale(1) rotate(0)
+}
+
+
+/* ----------------------page4----------------------------------- */
+
+.page4 {
+    height: 100vh;
+    /* background-color: rgb(138, 110, 124); */
+    /* background-color: rgb(119, 72, 121); */
+    background-color: rgb(120, 79, 124);
+    padding-top: 130px;
+}
+
+.page4 .portfoliotitle {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page4 .portpic {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-left: 50px;
+}
+
+.page4 .portpic a {
+    margin-right: 50px;
+    width: 100%;
+    height: 100%;
+    opacity: 100;
+    transition: 0.5s;
+}
+
+.page4 .portpic a:hover {
+    opacity: 0.5;
+}
+
+
+.page4 .portpic2 {
+    text-align: center;
+    padding-left: 50px;
+}
+
+.page4 .portpic2 a:hover {
+    opacity: 0.5;
+}
+
+.page4 .portpic2 a {
+    margin-right: 50px;
+    width: 100%;
+    height: 100%;
+    opacity: 100;
+    transition: 0.5s;
+}
+
+/* ---------------page5----------------------------------------- */
+.page5 {
+    height: 100vh;
+    background-color: rgb(139, 170, 216);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top:50px;
+}
+
+.page5 .contact_left {
+    display: inline-block;
+    width: 525px;
+    height: 641px;
+    margin-left: 200px;
+    padding-top: 30px;
+}
+
+.page5 .contact_left .contact2 {
+    margin-bottom: 50px;
+}
+
+.page5 .contact_left .leftunder {
+    line-height: 40px;
+}
+
+.page5 .contact_left p {
+    font-size: 14pt;
+    margin-bottom: 80px;
+}
+
+.page5 .contact_left h2 {
+    font-size: 18pt;
+}
+
+.page5 .contact_left h1 {
+    font-size: 25pt;
+}
+
+
+
+.page5 .contact_right {
+    width: 574px;
+    height: 641px;
+    background-color: #3d3d3d;
+    margin-right: 200px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.page5 .contact_right input {
+    border: none;
+    background: none;
+    border-bottom: 2px solid white;
+    outline: none;
+}
+
+.page5 .contact_right .email {
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.page5 .contact_right .message {
+    margin-bottom: 100px;
+}
+
+.page5 .contact_right .button {
+    margin-left: 200px;
+    height: 40px;
+    width: 180px;
+}
+
+.page5 .contact_right input::placeholder {
+    color: white;
+}
+
+.page5 .contact_right input[type=submit] {
+    border: none;
+    border: 2px solid white;
+}
+
+.page5 .contact_right textarea {
+    border: none;
+    background: none;
+    border-bottom: 2px solid white;
+    resize: none;
+    outline: none;
+    height: 300px;
+}
+
+.page5 .contact_right textarea::placeholder {
+    color: white;
+}
+
+.page5 .contact_right form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
